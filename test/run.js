@@ -42,6 +42,7 @@ describe('integration', function(){
         .define('url', stylus.url());
 
       if (~test.indexOf('compress')) style.set('compress', true);
+      if (~test.indexOf('include')) style.set('include css', true);
       return style;
     }
     function run(style) {
